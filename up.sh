@@ -10,8 +10,10 @@ NEW_PTS=$(($NUM + 1))
 
 sudo apt update
 
-gnome-terminal --window &
+gnome-terminal --window
 
 apt list --upgradable >> /dev/pts/"${NEW_PTS}"
  
-sudo apt update -y
+sudo apt upgrade -y
+
+sudo apt autoremove -y
