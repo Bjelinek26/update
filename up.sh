@@ -4,7 +4,7 @@ TTY=$(tty)
 
 IFS="/"
 
-read -r NOTHIN DEV PTS NUM <<< TTY
+read -r NOTHIN DEV PTS NUM <<< $TTY
 
 NEW_PTS=$(($NUM + 1))
 
