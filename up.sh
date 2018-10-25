@@ -18,7 +18,7 @@ sudo apt upgrade -y
 
 sudo apt autoremove -y
 
-read -p "press 1 to reboot, 2 to quit" ANS
+read -p "press 1 to reboot, 2 to quit, 3 to shutdown" ANS
 
 case $ANS in
 	1)
