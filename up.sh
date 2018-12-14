@@ -17,3 +17,17 @@ apt list --upgradable >> /dev/pts/"${NEW_PTS}"
 sudo apt upgrade -y
 
 sudo apt autoremove -y
+
+read -p "press 1 to reboot, 2 to quit, 3 to shutdown " ANS
+
+case $ANS in
+	1)
+	reboot
+	;;
+	2)
+	exit 1
+	;;
+	3)
+	poweroff
+	;;
+esac
